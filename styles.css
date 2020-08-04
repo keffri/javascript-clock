@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  background-image: url(./images/torigate.jpg);
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Source Code Pro", monospace;
+}
+
+.clocks {
+  height: 800px;
+  position: relative;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-date {
+}
+
+.digital-clock {
+  position: absolute;
+  top: 12.5%;
+  order: 1;
+  margin: auto;
+  width: 20rem;
+  height: 4rem;
+
+  text-align: center;
+  font-size: 3rem;
+}
+
+.analog-clock {
+  position: absolute;
+  bottom: 30%;
+  order: 2;
+  border: 3px solid #000;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.clock-face {
+  height: 100%;
+  width: 100%;
+}
+
+.seconds-hand {
+  position: absolute;
+  left: 50%;
+  background: #000;
+  height: 50%;
+  width: 3%;
+  transform-origin: bottom;
+}
+
+.minutes-hand {
+  position: absolute;
+  left: 50%;
+  background: #000;
+  height: 50%;
+  width: 5%;
+  transform-origin: bottom;
+}
+
+.hours-hand {
+  position: absolute;
+  left: 50%;
+  background: #000;
+  height: 50%;
+  width: 8%;
+  transform-origin: bottom;
+}
+
+@media screen and (max-height: 600px) {
+  html {
+    font-size: 10px;
+  }
+}

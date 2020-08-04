@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Clock</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="digital-clock"></div>
-    <div class="analog-clock"></div>
+    <div class="clocks">
+      <div class="date"><p class="current-date"></p></div>
+      <div class="digital-clock"><p class="analog-time"></p></div>
+      <div class="analog-clock">
+        <div class="clock-face">
+          <div class="seconds-hand"></div>
+          <div class="minutes-hand"></div>
+          <div class="hours-hand"></div>
+        </div>
+      </div>
+    </div>
 
     <script type="text/javascript" src="script.js"></script>
   </body>
